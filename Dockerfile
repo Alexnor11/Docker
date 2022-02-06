@@ -10,6 +10,6 @@ RUN  pip install -r /stocks_products/requirements.txt
 
 EXPOSE 8000
 
-CMD ["python3", "/stocks_products/manage.py", "runserver"]
+CMD ["python3", "/stocks_products/manage.py", "runserver", "0.0.0.0:8000"]
 
 # CMD gunicorn stocks_products/stocks_products.wsgi -b 0.0.0.0:8000
